@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 //* Configs
-import 'package:ui_library/configs/app_colors.theme.dart';
+import './app_colors.theme.dart';
 
 class AppTheme {
   //#region ----------------------------------- Variables ---------------------------------
