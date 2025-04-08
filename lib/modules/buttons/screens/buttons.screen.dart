@@ -20,7 +20,7 @@ class ButtonsScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(title: const Text('Buttons')),
-        body: const Center(child: Text('Buttons')),
+        body: const Padding(padding: EdgeInsets.all(10)),
       ),
     );
   }

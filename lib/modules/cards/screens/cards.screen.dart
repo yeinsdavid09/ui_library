@@ -20,7 +20,7 @@ class CardsScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(title: const Text('Cards')),
-        body: const Center(child: Text('Cards')),
+        body: const Padding(padding: EdgeInsets.all(10)),
       ),
     );
   }

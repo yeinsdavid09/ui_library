@@ -29,12 +29,15 @@ class HomeScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(title: const Text('Ui Library')),
-        body: ListView.builder(
-          itemCount: menuItems.length,
-          itemBuilder: (context, index) {
-            final MenuItemsModel item = menuItems[index];
-            return ListTileWidget(item: item);
-          },
+        body: Padding(
+          padding: const EdgeInsets.all(10),
+          child: ListView.builder(
+            itemCount: menuItems.length,
+            itemBuilder: (context, index) {
+              final MenuItemsModel item = menuItems[index];
+              return ListTileWidget(item: item);
+            },
+          ),
         ),
       ),
     );
