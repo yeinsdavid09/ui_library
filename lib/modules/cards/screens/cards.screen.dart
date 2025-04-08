@@ -19,8 +19,8 @@ class CardsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: Text('Cards')),
-        body: Center(child: Text('Cards')),
+        appBar: AppBar(title: const Text('Cards')),
+        body: const Center(child: Text('Cards')),
       ),
     );
   }

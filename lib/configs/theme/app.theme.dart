@@ -47,7 +47,7 @@ class AppTheme {
       useMaterial3: true,
       colorSchemeSeed: themeColors[_colorSeed],
       brightness: _brightness,
-      appBarTheme: AppBarTheme(centerTitle: false),
+      appBarTheme: const AppBarTheme(centerTitle: false),
     );
   }
 

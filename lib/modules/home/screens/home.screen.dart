@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: Text('Ui Library')),
+        appBar: AppBar(title: const Text('Ui Library')),
         body: ListView.builder(
           itemCount: menuItems.length,
           itemBuilder: (context, index) {

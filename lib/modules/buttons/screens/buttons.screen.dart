@@ -19,8 +19,8 @@ class ButtonsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: Text('Buttons')),
-        body: Center(child: Text('Buttons')),
+        appBar: AppBar(title: const Text('Buttons')),
+        body: const Center(child: Text('Buttons')),
       ),
     );
   }

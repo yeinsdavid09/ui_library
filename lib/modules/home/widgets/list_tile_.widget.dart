@@ -30,7 +30,7 @@ class ListTileWidget extends StatelessWidget {
     //#region --------------------------------- Return ---------------------------------
 
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 3),
+      padding: const EdgeInsets.symmetric(vertical: 3),
       child: ListTile(
         title: Text(item.title),
         subtitle: Text(item.description),
