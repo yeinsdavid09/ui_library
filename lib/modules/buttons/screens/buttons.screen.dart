@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+
+class ButtonsScreen extends StatelessWidget {
+  //#region ----------------------------------- Variables ---------------------------------
+
+  static const String routeName = 'buttons_screen';
+
+  //#endregion
+
+  //#region --------------------------------- Hooks ---------------------------------
+
+  const ButtonsScreen({super.key});
+
+  //#endregion
+
+  //#region --------------------------------- Methods ---------------------------------
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: Text('Buttons')),
+        body: Center(child: Text('Buttons')),
+      ),
+    );
+  }
+
+  //#endregion
+}
