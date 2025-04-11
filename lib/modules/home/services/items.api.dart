@@ -16,4 +16,40 @@ List<MenuItemsModel> menuItems = [
     link: '/cards',
     icon: Icons.credit_card,
   ),
+  const MenuItemsModel(
+    title: 'Animated',
+    description: 'Exercitation commodo ex aliqua nulla do anim minim tempor.',
+    link: '/animated',
+    icon: Icons.animation,
+  ),
+  const MenuItemsModel(
+    title: 'Controls',
+    description: 'Exercitation commodo ex aliqua nulla do anim minim tempor.',
+    link: '/controls',
+    icon: Icons.control_camera_outlined,
+  ),
+  const MenuItemsModel(
+    title: 'Infinite Scroll',
+    description: 'Exercitation commodo ex aliqua nulla do anim minim tempor.',
+    link: '/infinite-scroll',
+    icon: Icons.mouse_outlined,
+  ),
+  const MenuItemsModel(
+    title: 'Progress',
+    description: 'Exercitation commodo ex aliqua nulla do anim minim tempor.',
+    link: '/progress',
+    icon: Icons.update_outlined,
+  ),
+  const MenuItemsModel(
+    title: 'Snackbar',
+    description: 'Exercitation commodo ex aliqua nulla do anim minim tempor.',
+    link: '/snackbar',
+    icon: Icons.alarm,
+  ),
+  const MenuItemsModel(
+    title: 'Tutorial',
+    description: 'Exercitation commodo ex aliqua nulla do anim minim tempor.',
+    link: '/tutorial',
+    icon: Icons.dashboard,
+  ),
 ];
