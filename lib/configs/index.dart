@@ -5,5 +5,8 @@ export 'package:ui_library/configs/theme/app_colors.theme.dart';
 
 //#endregion
 
-//#region ----------------------------------- Router ---------------------------------
+//#region ----------------------------------- Providers ---------------------------------
+
+export 'package:ui_library/configs/providers/theme.provider.dart';
+
 //#endregion

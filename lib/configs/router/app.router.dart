@@ -11,6 +11,7 @@ import 'package:ui_library/modules/infinite_scroll/index.dart';
 import 'package:ui_library/modules/progress/index.dart';
 import 'package:ui_library/modules/snackbar/index.dart';
 import 'package:ui_library/modules/tutorial/index.dart';
+import 'package:ui_library/modules/counter/index.dart';
 
 final GoRouter appRouter = GoRouter(
   initialLocation: '/',
@@ -76,6 +77,13 @@ final GoRouter appRouter = GoRouter(
       name: TutorialScreen.routeName,
       builder: (BuildContext context, GoRouterState state) {
         return const TutorialScreen();
+      },
+    ),
+    GoRoute(
+      path: '/counter',
+      name: CounterScreen.routeName,
+      builder: (BuildContext context, GoRouterState state) {
+        return const CounterScreen();
       },
     ),
   ],
