@@ -8,6 +8,7 @@ import 'package:ui_library/modules/home/services/items.api.dart';
 
 //* Widgets
 import 'package:ui_library/modules/home/widgets/list_tile_.widget.dart';
+import 'package:ui_library/modules/home/widgets/menu.widget.dart';
 
 class HomeScreen extends StatelessWidget {
   //#region ----------------------------------- Variables ---------------------------------
@@ -26,9 +27,19 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //#region ----------------------------------- Variables ---------------------------------
+
+    final scaffoldKey = GlobalKey<ScaffoldState>();
+
+    //#endregion
+
+    //#region --------------------------------- Return ---------------------------------
+
     return SafeArea(
       child: Scaffold(
+        key: scaffoldKey,
         appBar: AppBar(title: const Text('Ui Library')),
+        drawer: MenuWidget(items: menuItems, scaffoldKey: scaffoldKey),
         body: Padding(
           padding: const EdgeInsets.all(10),
           child: ListView.builder(
@@ -41,6 +52,8 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
     );
+
+    //#endregion
   }
 
   //#endregion
