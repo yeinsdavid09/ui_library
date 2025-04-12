@@ -29,11 +29,11 @@ class ControlsScreen extends StatelessWidget {
           padding: const EdgeInsets.all(10),
           child: ListView(
             physics: const ClampingScrollPhysics(),
-            children: [
-              const _SwitchControls(),
-              const SizedBox(height: 10),
-              const _CheckboxControls(),
-              const SizedBox(height: 10),
+            children: const [
+              _SwitchControls(),
+              SizedBox(height: 10),
+              _CheckboxControls(),
+              SizedBox(height: 10),
               _RadioControls(),
             ],
           ),
@@ -153,29 +153,37 @@ class _RadioControlsState extends State<_RadioControls> {
       title: const Text('Radio Controls'),
       children: [
         RadioWidget(
-          title: 'By Car',
-          subtitle: 'Adipisicing esse quis aute dolore qui non nisi irure.',
+          title: const Text('By Car'),
+          subtitle: const Text(
+            'Adipisicing esse quis aute dolore qui non nisi irure.',
+          ),
           radioGroup: radioGroup,
           radioValue: 'car',
           onValueChange: (value) => setRadioValue(value),
         ),
         RadioWidget(
-          title: 'By Boat',
-          subtitle: 'Adipisicing esse quis aute dolore qui non nisi irure.',
+          title: const Text('By Boat'),
+          subtitle: const Text(
+            'Adipisicing esse quis aute dolore qui non nisi irure.',
+          ),
           radioGroup: radioGroup,
           radioValue: 'boat',
           onValueChange: (value) => setRadioValue(value),
         ),
         RadioWidget(
-          title: 'By Airplane',
-          subtitle: 'Adipisicing esse quis aute dolore qui non nisi irure.',
+          title: const Text('By Airplane'),
+          subtitle: const Text(
+            'Adipisicing esse quis aute dolore qui non nisi irure.',
+          ),
           radioGroup: radioGroup,
           radioValue: 'airplane',
           onValueChange: (value) => setRadioValue(value),
         ),
         RadioWidget(
-          title: 'By Submarine',
-          subtitle: 'Adipisicing esse quis aute dolore qui non nisi irure.',
+          title: const Text('By Submarine'),
+          subtitle: const Text(
+            'Adipisicing esse quis aute dolore qui non nisi irure.',
+          ),
           radioGroup: radioGroup,
           radioValue: 'submarine',
           onValueChange: (value) => setRadioValue(value),

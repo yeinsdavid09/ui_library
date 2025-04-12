@@ -21,6 +21,7 @@ class MyApp extends ConsumerWidget {
     //#region ----------------------------------- Variables ---------------------------------
 
     final Brightness brightness = ref.watch(brightnessProvider);
+    final int color = ref.watch(colorProvider);
 
     //#endregion
 
@@ -28,7 +29,7 @@ class MyApp extends ConsumerWidget {
 
     return MaterialApp.router(
       routerConfig: appRouter,
-      theme: AppTheme(colorSeed: 1, brightness: brightness).getTheme(),
+      theme: AppTheme(colorSeed: color, brightness: brightness).getTheme(),
       debugShowCheckedModeBanner: false,
       title: 'Ui Library',
     );

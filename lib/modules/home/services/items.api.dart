@@ -58,4 +58,10 @@ List<MenuItemsModel> menuItems = [
     link: '/counter',
     icon: Icons.numbers_rounded,
   ),
+  const MenuItemsModel(
+    title: 'Colors',
+    description: 'Exercitation commodo ex aliqua nulla do anim minim tempor.',
+    link: '/colors',
+    icon: Icons.color_lens_rounded,
+  ),
 ];

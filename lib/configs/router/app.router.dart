@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:ui_library/modules/animated/index.dart';
 
 //* Screens
 import 'package:ui_library/modules/home/index.dart';
 import 'package:ui_library/modules/buttons/index.dart';
 import 'package:ui_library/modules/cards/index.dart';
 import 'package:ui_library/modules/controls/index.dart';
+import 'package:ui_library/modules/animated/index.dart';
 import 'package:ui_library/modules/infinite_scroll/index.dart';
 import 'package:ui_library/modules/progress/index.dart';
 import 'package:ui_library/modules/snackbar/index.dart';
 import 'package:ui_library/modules/tutorial/index.dart';
 import 'package:ui_library/modules/counter/index.dart';
+import 'package:ui_library/modules/colors/index.dart';
 
 final GoRouter appRouter = GoRouter(
   initialLocation: '/',
@@ -84,6 +85,13 @@ final GoRouter appRouter = GoRouter(
       name: CounterScreen.routeName,
       builder: (BuildContext context, GoRouterState state) {
         return const CounterScreen();
+      },
+    ),
+    GoRoute(
+      path: '/colors',
+      name: ColorsScreen.routeName,
+      builder: (BuildContext context, GoRouterState state) {
+        return const ColorsScreen();
       },
     ),
   ],

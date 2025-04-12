@@ -43,6 +43,7 @@ class HomeScreen extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(10),
           child: ListView.builder(
+            physics: const BouncingScrollPhysics(),
             itemCount: menuItems.length,
             itemBuilder: (context, index) {
               final MenuItemsModel item = menuItems[index];

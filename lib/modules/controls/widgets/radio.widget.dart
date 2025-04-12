@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 class RadioWidget extends StatelessWidget {
   //#region ----------------------------------- Variables ---------------------------------
 
-  final String title;
-  final String subtitle;
+  final Text title;
+  final Text subtitle;
   final dynamic radioGroup;
   final dynamic radioValue;
+  final Color? color;
   final ValueChanged<Object?> onValueChange;
 
   //#endregion
@@ -20,6 +21,7 @@ class RadioWidget extends StatelessWidget {
     required this.radioGroup,
     required this.onValueChange,
     required this.radioValue,
+    this.color,
   });
 
   //#endregion
@@ -29,10 +31,11 @@ class RadioWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RadioListTile(
-      title: Text(title),
-      subtitle: Text(subtitle),
+      title: title,
+      subtitle: subtitle,
       value: radioValue,
       groupValue: radioGroup,
+      activeColor: color,
       onChanged: (value) {
         onValueChange(value);
       },
